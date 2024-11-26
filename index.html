@@ -4,74 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset di base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Sezione 'Chi Sono' */
+        .about {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Timeline delle esperienze professionali */
+        .timeline {
+            margin: 50px 0;
+            padding-left: 30px;
+        }
+
+        .timeline li {
+            position: relative;
+            list-style: none;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background-color: #3498db;
+            border-radius: 50%;
+        }
+
+        .timeline .job {
+            font-size: 1.2em;
+            color: #3498db;
+        }
+
+        .timeline .duration {
+            color: #777;
+        }
+
+        /* Sezione competenze */
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+
+        .skills div {
+            text-align: center;
+        }
+
+        .skills .bar {
+            width: 200px;
+            height: 20px;
+            background-color: #ddd;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .skills .bar span {
+            display: block;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #3498db;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
 
+<header>
     <div class="container">
-        <header class="header">
-            <h1 id="name">Karim Saoud</h1>
-            <p id="job-title">Posizione desiderata</p>
-            <p id="contact-info">Telefono: (123) 456-7890 | Email: nome@example.com</p>
-        </header>
-
-        <section class="section" id="experience">
-            <h2>Esperienza Lavorativa</h2>
-            <ul>
-                <li>
-                    <h3>Ruolo 1</h3>
-                    <p><strong>Azienda 1</strong> - Anno Inizio - Anno Fine</p>
-                    <p>Descrizione dell'esperienza 1...</p>
-                </li>
-                <li>
-                    <h3>Ruolo 2</h3>
-                    <p><strong>Azienda 2</strong> - Anno Inizio - Anno Fine</p>
-                    <p>Descrizione dell'esperienza 2...</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="section" id="education">
-            <h2>Istruzione</h2>
-            <ul>
-                <li>
-                    <h3>Laurea in Informatica</h3>
-                    <p><strong>Università XYZ</strong> - Anno Inizio - Anno Fine</p>
-                    <p>Descrizione del corso di studi...</p>
-                </li>
-                <li>
-                    <h3>Diploma di Maturità</h3>
-                    <p><strong>Liceo ABC</strong> - Anno Inizio - Anno Fine</p>
-                    <p>Descrizione del percorso scolastico...</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="section" id="skills">
-            <h2>Competenze</h2>
-            <ul>
-                <li>Competenze 1</li>
-                <li>Competenze 2</li>
-                <li>Competenze 3</li>
-                <li>Competenze 4</li>
-            </ul>
-        </section>
-
-        <section class="section" id="languages">
-            <h2>Lingue Straniere</h2>
-            <ul>
-                <li>Lingua 1 - Livello</li>
-                <li>Lingua 2 - Livello</li>
-            </ul>
-        </section>
-
-        <footer>
-            <button id="show-more" onclick="toggleMoreInfo()">Mostra di più</button>
-            <p id="more-info" class="hidden">Informazioni extra aggiuntive...</p>
-        </footer>
+        <h1>Nome Cognome</h1>
+        <p>Posizione desiderata | Professionista del Web</p>
     </div>
+</header>
 
-    <script src="script.js"></script>
+<div class="container">
+    <!-- Sezione "Chi Sono" -->
+    <section class="about">
+        <h2>Chi Sono</h2>
+        <p>Mi chiamo [Nome], sono un web developer con esperienza in frontend e backend. Sono appassionato di tecnologia, design e risoluzione dei problemi. Credo nell'innovazione e nell'apprendimento continuo.</p>
+    </section>
+
+    <!-- Timeline delle Esperienze Professionali -->
+    <section class="timeline">
+        <h2>Esperienze Professionali</h2>
+        <ul>
+            <li>
+                <p class="job">Sviluppatore Web - Azienda XYZ</p>
+                <p class="duration">Gennaio 2022 - Oggi</p>
+                <p>Responsabile dello sviluppo di applicazioni web e miglioramenti dell'interfaccia utente. Utilizzo di tecnologie come React, Node.js, e MongoDB.</p>
+            </li>
+            <li>
+                <p class="job">Frontend Developer - Azienda ABC</p>
+                <p class="duration">Giugno 2020 - Dicembre 2021</p>
+                <p>Ho collaborato nella creazione di siti web interattivi e responsive, utilizzando HTML, CSS, JavaScript e le librerie più moderne.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sezione Competenze -->
+    <section class="skills">
+        <div>
+            <h3>HTML</h3>
+            <div class="bar"><span style="width: 90%; background-color: #3498db;"></span></div>
+        </div>
+        <div>
+            <h3>CSS</h3>
+            <div class="bar"><span style="width: 85%; background-color: #3498db;"></span></div>
+        </div>
+        <div>
+            <h3>JavaScript</h3>
+            <div class="bar"><span style="width: 80%; background-color: #3498db;"></span></div>
+        </div>
+        <div>
+            <h3>React</h3>
+            <div class="bar"><span style="width: 75%; background-color: #3498db;"></span></div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>Contattami su <a href="https://www.linkedin.com/in/tuo-linkedin" style="color: white;">LinkedIn</a></p>
+</footer>
+
 </body>
 </html>
