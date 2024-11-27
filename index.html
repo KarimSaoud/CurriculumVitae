@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karim Saoud</title>
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://github.com/Clunky4167/Prova/blob/main/unnamed.png">
+    
     <style>
         /* Reset di base */
         * {
@@ -150,89 +154,100 @@
             padding: 20px;
             font-size: 1.1em;
         }
+
+        footer a {
+            margin: 0 10px;
+        }
+
+        footer img {
+            width: 30px;
+        }
     </style>
 </head>
+
 <body>
 
-<header>
-    <div>
-        <h1>Karim Saoud</h1>
-        <p>Sviluppatore Web | Designer Creativo</p>
-    </div>
-    <!-- Selettore della lingua -->
-    <div style="position: absolute; top: 20px; right: 20px; font-size: 1em;">
-        <label for="language-select" style="display: flex; align-items: center; gap: 8px; color: white; cursor: pointer;">
-            <img src="https://cdn-icons-png.flaticon.com/512/323/323329.png" alt="Globo lingua" style="width: 25px; height: 25px;">
-            <select id="language-select" style="font-size: 1em; padding: 5px; border-radius: 5px; border: none;">
-                <option value="it">Italiano</option>
-                <option value="en">English</option>
-                <option value="fr">Français</option>
-                <option value="es">Español</option>
-            </select>
-        </label>
-    </div>
-</header>
-
-<div class="content">
-    <!-- Colonna Sinistra: Foto e Chi Sono -->
-    <div class="left-column">
-        <img src="unnamed.png" alt="Foto Profilo">
-        <h2>Chi Sono</h2>
-        <p>Mi chiamo Karim e sono una mente curiosa nata per esplorare mondi reali e immaginari. Vivo con un piede sulla terraferma e l'altro in una nuvola di sogni, dove tutto è possibile. Amo scoprire nuovi orizzonti, sia nei libri che nei tramonti, e il mio motto è: "Ogni giornata ha una storia da raccontare, basta saperla ascoltare". Sono un’artista dell’improvvisazione, che si tratti di inventare una ricetta dal nulla o di trasformare un momento qualunque in un’avventura epica. Adoro le conversazioni profonde e le risate leggere, perché penso che l’equilibrio tra serietà e leggerezza sia la chiave per vivere appieno.</p>
-    </div>
-
-    <!-- Colonna Destra: Esperienze e Competenze -->
-    <div class="right-column">
-        <h2>Esperienze Professionali</h2>
-        <div class="timeline">
-            <ul>
-                <li>
-                    <div class="role">Sviluppatore Web - Azienda XYZ</div>
-                    <div class="date">Gennaio 2022 - Oggi</div>
-                    <p>Sviluppo e manutenzione di applicazioni web, miglioramento dell'interfaccia utente e ottimizzazione del codice.</p>
-                </li>
-                <li>
-                    <div class="role">Frontend Developer - Azienda ABC</div>
-                    <div class="date">Giugno 2020 - Dicembre 2021</div>
-                    <p>Ho creato interfacce utente responsive con HTML, CSS, JavaScript e frameworks moderni come React.</p>
-                </li>
-            </ul>
+    <header>
+        <div>
+            <h1>Karim Saoud</h1>
+            <p>Sviluppatore Web | Designer Creativo</p>
         </div>
 
-        <h2>Competenze</h2>
-        <div class="skills">
-            <div class="skill">
-                <h3>HTML</h3>
-                <div class="skill-bar"><span style="width: 90%; background-color: #3498db;"></span></div>
+        <!-- Selettore della lingua -->
+        <div style="position: absolute; top: 20px; right: 20px; font-size: 1em;">
+            <label for="language-select" style="display: flex; align-items: center; gap: 8px; color: white; cursor: pointer;">
+                <img src="https://cdn-icons-png.flaticon.com/512/323/323329.png" alt="Globo lingua" style="width: 25px; height: 25px;">
+                <select id="language-select" style="font-size: 1em; padding: 5px; border-radius: 5px; border: none;">
+                    <option value="it">Italiano</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                </select>
+            </label>
+        </div>
+    </header>
+
+    <div class="content">
+        <!-- Colonna Sinistra: Foto e Chi Sono -->
+        <div class="left-column">
+            <img src="unnamed.png" alt="Foto Profilo">
+            <h2>Chi Sono</h2>
+            <p>Mi chiamo Karim e sono una mente curiosa nata per esplorare mondi reali e immaginari. Vivo con un piede sulla terraferma e l'altro in una nuvola di sogni, dove tutto è possibile. Amo scoprire nuovi orizzonti, sia nei libri che nei tramonti, e il mio motto è: "Ogni giornata ha una storia da raccontare, basta saperla ascoltare". Sono un’artista dell’improvvisazione, che si tratti di inventare una ricetta dal nulla o di trasformare un momento qualunque in un’avventura epica. Adoro le conversazioni profonde e le risate leggere, perché penso che l’equilibrio tra serietà e leggerezza sia la chiave per vivere appieno.</p>
+        </div>
+
+        <!-- Colonna Destra: Esperienze e Competenze -->
+        <div class="right-column">
+            <h2>Esperienze Professionali</h2>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="role">Sviluppatore Web - Azienda XYZ</div>
+                        <div class="date">Gennaio 2022 - Oggi</div>
+                        <p>Sviluppo e manutenzione di applicazioni web, miglioramento dell'interfaccia utente e ottimizzazione del codice.</p>
+                    </li>
+                    <li>
+                        <div class="role">Frontend Developer - Azienda ABC</div>
+                        <div class="date">Giugno 2020 - Dicembre 2021</div>
+                        <p>Ho creato interfacce utente responsive con HTML, CSS, JavaScript e frameworks moderni come React.</p>
+                    </li>
+                </ul>
             </div>
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="skill-bar"><span style="width: 85%; background-color: #3498db;"></span></div>
-            </div>
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <div class="skill-bar"><span style="width: 80%; background-color: #3498db;"></span></div>
-            </div>
-            <div class="skill">
-                <h3>React</h3>
-                <div class="skill-bar"><span style="width: 75%; background-color: #3498db;"></span></div>
+
+            <h2>Competenze</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <div class="skill-bar"><span style="width: 90%; background-color: #3498db;"></span></div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <div class="skill-bar"><span style="width: 85%; background-color: #3498db;"></span></div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><span style="width: 80%; background-color: #3498db;"></span></div>
+                </div>
+                <div class="skill">
+                    <h3>React</h3>
+                    <div class="skill-bar"><span style="width: 75%; background-color: #3498db;"></span></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<footer>
-    <p>Seguimi sui social:</p>
-    <a href="https://www.linkedin.com/in/tuo-linkedin" target="_blank">
-        <img src="https://github.com/Clunky4167/Prova/blob/main/icons8-linkedin-logo-500.png" alt="LinkedIn" style="width: 30px; margin: 0 10px;">
-    </a>
-    <a href="https://www.facebook.com/tuo-facebook" target="_blank">
-        <img src="https://github.com/Clunky4167/Prova/blob/main/icons8-facebook-logo-500.png" alt="Facebook" style="width: 30px; margin: 0 10px;">
-    </a>
-    <a href="https://www.instagram.com/tuo-instagram" target="_blank">
-        <img src="https://github.com/Clunky4167/Prova/blob/main/icons8-instagram-logo-500.png" alt="Instagram" style="width: 30px; margin: 0 10px;">
-    </a>
-</footer>
+    <footer>
+        <p>Seguimi sui social:</p>
+        <a href="https://www.linkedin.com/in/tuo-linkedin" target="_blank">
+            <img src="https://github.com/Clunky4167/Prova/blob/main/icons8-linkedin-logo-500.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.facebook.com/tuo-facebook" target="_blank">
+            <img src="https://github.com/Clunky4167/Prova/blob/main/icons8-facebook-logo-500.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/tuo-instagram" target="_blank">
+            <img src="https://github.com/Clunky4167/Prova/blob/main/icons8-instagram-logo-500.png" alt="Instagram">
+        </a>
+    </footer>
 
 </body>
+
 </html>
